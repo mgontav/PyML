@@ -1,3 +1,5 @@
+DISCLAIMER: This Git repo is a copy of the code available at http://pyml.sourceforge.net/. I do claim ownership nor responsability over this code. To contact the author, please refer to the README below.
+
 PyML - a Python Machine Learning package
 
 Asa Ben-Hur
