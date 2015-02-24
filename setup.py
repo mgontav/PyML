@@ -10,13 +10,6 @@ from distutils.command.build_ext import build_ext
 if not hasattr(sys, 'version_info') or sys.version_info < (2,5,0,'alpha',0):
     raise SystemExit, "Python 2.5 or later is required."
 
-try :
-    import numpy
-except :
-    raise SystemExit, "The numpy package is required"
-if numpy.version.version < '1.0' :
-    raise SystemExit, 'numpy 1.0 or later is required'
-
 name = "PyML"
 version = "0.7.13.3"
 
@@ -161,5 +154,6 @@ setup (name = name,
        #py_modules = PyML_modules,
        packages = PyML_packages,
        ext_modules = extensions,
+       setup_requires = 'numpy=1.9.1'
        #extra_path = 'PyML'
        )
